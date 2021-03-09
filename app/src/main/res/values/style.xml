@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name ="colorPrimary">#0398FC</item>
+        <item name ="colorPrimaryDark">#003C63</item>
+        <item name ="colorAccent">#90BFDE</item>
+    </style>
+    <style name="SelectionAppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name ="colorPrimary">#F37D80</item>
+        <item name ="colorPrimaryDark">#003C63</item>
+        <item name ="colorAccent">#90BFDE</item>
+    </style>
+    <style name="WelcomeTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name ="colorPrimary">#0398FC</item>
+        <item name ="colorPrimaryDark">#003C63</item>
+        <item name ="colorAccent">#90BFDE</item>
+    </style>
+    <style name="ContextMenuTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name ="colorPrimary">#0398FC</item>
+        <item name ="colorPrimaryDark">#003C63</item>
+        <item name ="colorAccent">#90BFDE</item>
+    </style>
+</resources>

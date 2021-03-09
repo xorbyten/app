@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeActivity"
+    android:background="@drawable/welcome_bkg"
+    android:theme="@style/WelcomeTheme">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="225dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/registration_label"
+                android:textColor="@color/welcome_text_1_black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/editext_hint_username"
+                android:maxLines="1"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/editext_hint_password"
+                android:maxLines="1"
+                android:inputType="text"/>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button"
+                android:text="@string/btn_signup"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
